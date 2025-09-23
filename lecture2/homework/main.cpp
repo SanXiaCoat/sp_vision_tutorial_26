@@ -24,7 +24,7 @@ int main(int argc, char** argv)
     int offsetX = 0, offsetY = 0;
     double proportion = 0.0;
     cv::Mat bgr_img_resized;
-    resizeImg(bgr_img, bgr_img_resized, cv::Size(16, 16), &offsetX, &offsetY, &proportion);
+    resizeImg(bgr_img, bgr_img_resized, cv::Size(640, 640), &offsetX, &offsetY, &proportion);
 
     //fmt输出放缩比例，图像偏移距离
     fmt::print("proportion: {:.4f}, offsetX: {}, offsetY: {}\n", proportion, offsetX, offsetY);
