@@ -1,0 +1,6 @@
+/Users/sanxia/项目/sp_vision_tutorial_26/lecture2/build/CMakeFiles/split_channels.dir
+/Users/sanxia/项目/sp_vision_tutorial_26/lecture2/build/CMakeFiles/lightbar_detection.dir
+/Users/sanxia/项目/sp_vision_tutorial_26/lecture2/build/CMakeFiles/fmt_test.dir
+/Users/sanxia/项目/sp_vision_tutorial_26/lecture2/build/CMakeFiles/homework.dir
+/Users/sanxia/项目/sp_vision_tutorial_26/lecture2/build/CMakeFiles/edit_cache.dir
+/Users/sanxia/项目/sp_vision_tutorial_26/lecture2/build/CMakeFiles/rebuild_cache.dir

@@ -4,7 +4,7 @@
 
 // ====== 函数声明 ======
 // 功能：输出 vector 中的所有元素
-void printVector(const std::vector<int> data);
+// void printVector(const std::vector<int> data);
 
 int main()
 {
@@ -34,19 +34,19 @@ int main()
     }
     // 4. 调用函数打印
     std::cout << "Numbers: ";
-    printVector(numbers);
+    // printVector(numbers);
     std::cout << "Binary: ";
-    printVector(binary);
+    // printVector(binary);
 
     return 0;
 }
 
-// ====== 函数定义 ======
-void printVector(const std::vector<int> data)
-{
-    for (int n : data)
-    {
-        std::cout << n << " ";
-    }
-    std::cout << std::endl;
-}
+// // ====== 函数定义 ======
+// void printVector(const std::vector<int> data)
+// {
+//     for (int n : data)
+//     {
+//         std::cout << n << " ";
+//     }
+//     std::cout << std::endl;
+// }

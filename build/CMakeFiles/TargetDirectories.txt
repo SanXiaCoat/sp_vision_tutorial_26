@@ -1,0 +1,3 @@
+/Users/sanxia/项目/sp_vision_tutorial_26/build/CMakeFiles/main.dir
+/Users/sanxia/项目/sp_vision_tutorial_26/build/CMakeFiles/edit_cache.dir
+/Users/sanxia/项目/sp_vision_tutorial_26/build/CMakeFiles/rebuild_cache.dir
