@@ -31,6 +31,13 @@ myCamera::myCamera()
 
     init();
 
+    ret_ = MV_CC_StartGrabbing(handle_);
+    if (ret_ != MV_OK) 
+    {
+        std::cerr << "Start grabbing failed!" << std::endl;
+        return;
+    }
+
 }
 
 myCamera::~myCamera() 
@@ -53,12 +60,7 @@ myCamera::~myCamera()
 
 cv::Mat myCamera::read()
 {
-    ret_ = MV_CC_StartGrabbing(handle_);
-    if (ret_ != MV_OK) 
-    {
-        std::cerr << "Start grabbing failed!" << std::endl;
-        return cv::Mat();
-    }
+
 
     ret_ = MV_CC_GetImageBuffer(handle_, &raw_frame_, nMsec_);
     if (ret_ != MV_OK) 
