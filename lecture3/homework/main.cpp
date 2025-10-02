@@ -7,14 +7,10 @@ int main()
 {
     // 初始化相机、yolo类
     myCamera cam;
-    auto yolo = auto_aim::YOLO("../configs/yolo.yaml", true);
+    auto yolo = auto_aim::YOLO("configs/yolo.yaml", true);
     while (1) {
         // 调用相机读取图像
-        cv::Mat img = cv::imread("../../lecture2/img/test_1.jpg");
-        if (img.empty()) {
-            continue;
-        }
-
+        cv::Mat img = cam.read();
 
         // 调用yolo识别装甲板
         std::list<auto_aim::Armor> armors = yolo.detect(img);
@@ -22,7 +18,7 @@ int main()
         // 绘制每个装甲板的四个关键点为红色闭合矩形
         for (const auto& armor : armors) 
         {
-            tools::draw_points(img, armor.points, cv::Scalar(0, 0, 255), 2);
+            tools::draw_points(img, armor.points, cv::Scalar(255, 0, 0), 2);
 
             std::string color_str = auto_aim::COLORS[static_cast<int>(armor.color)];
             std::string name_str = auto_aim::ARMOR_NAMES[static_cast<int>(armor.name)];
